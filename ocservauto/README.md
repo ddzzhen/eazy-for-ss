@@ -23,12 +23,46 @@ When you change the profiles,restart the vpn server.
 ```shell
 /etc/init.d/ocserv restart
 ```
-
+stop the vpn server.
+```
+/etc/init.d/ocserv stop
+```
+debug mode.(logs)
+```
+/etc/init.d/ocserv debug
+```
 You can get help 
 ```shell
 bash ocservauto.sh h
 ```
-
+---
+useradd.
+```
+sudo ocpasswd -c /etc/ocserv/ocpasswd username
+```
+certificate login.
+```
+add:
+bash ocservauto.sh gc
+delet:
+bash ocservauto.sh rc
+```
+others.
+```
+upgrade:
+bash ocservauto.sh ug
+force reinstall:
+bash ocservauto.sh ri
+open the user and certificate login:
+bash ocservauto.sh pc
+>Tip: One method can use at least.
+anyconnect:
+untrusted certificates is allowed.
+>Tip:window mobile must insert "https://"+example.com:port
+bertter to use(depend environment):
+>connected but no data:smaller the "dpd","mobile-dpd"
+>high ping:make "output-buffer" to 10
+>Tip:small "output-buffer" will influence the mount of data.
 ============
 
 ## LICENCE
