@@ -1,6 +1,6 @@
-## Ocservauto For Debian 0.8
+## Ocservauto For Debian/Ubuntu
 
-This script may help you setup your own openconnect_server in debian(>=7),ubuntu(>=14.04).
+This script may help you setup your own openconnect_server in debian(>=7),ubuntu(=14.04).
 
 这是一枚适用于deibian的openconnect_server安装脚本。中文详情 [戳这里](http://www.fanyueciyuan.info/fq/ocserv-debian.html)
 
@@ -11,9 +11,11 @@ This script may help you setup your own openconnect_server in debian(>=7),ubuntu
 apt-get update
 apt-get upgrade
 apt-get install wget
-wget http://git.io/p9r8 --no-check-certificate -O ocservauto.sh
+wget https://raw.githubusercontent.com/ddzzhen/eazy-for-ss/ocserv11/ocservauto/ocservauto.sh --no-check-certificate -O ocservauto.sh
 bash ocservauto.sh
 ```
+
+>some documents come from origin,will change future.
 
 Profiles in /etc/ocserv/
 

@@ -494,8 +494,8 @@ function tar_ocserv_install(){
     oc_version=${oc_version:-${Default_oc_version}}
     [ "$OC_version_latest" = "" ] && {
 #可以换成自己的下载地址
-        oc_version='0.10.8'
-        curl -SOL "https://github.com/fanyueciyuan/ocserv-backup/raw/master/ocserv-$oc_version.tar.xz"
+        oc_version='0.11.8'
+        wget -c https://github.com/ddzzhen/raw/ocserv11/ocserv-$oc_version.tar.xz
     } || {
         wget -c ftp://ftp.infradead.org/pub/ocserv/ocserv-$oc_version.tar.xz
     }
@@ -1009,7 +1009,7 @@ echo "==========================================================================
 #如果fork的话，请修改为自己的网络地址
 NET_OC_CONF_DOC="https://raw.githubusercontent.com/fanyueciyuan/eazy-for-ss/master/ocservauto"
 #推荐的默认版本
-Default_oc_version="0.10.8"
+Default_oc_version="0.11.8"
 #开启分组模式，每位用户都会分配到All组和Route组。
 #All走全局，Route将会绕过大陆。
 #证书以及用户名登录都会采取。
