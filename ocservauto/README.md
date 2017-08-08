@@ -68,7 +68,9 @@ no-route = 192.168.0.0/255.255.0.0
 no-route = 172.16.0.0/255.240.0.0
 no-route = 169.254.0.0/255.255.0.0
 no-route = 127.0.0.0/255.0.0.0
-
+#glances用于查看网络情况    
+apt-get install glances
+glances
 ============
 
 ## LICENCE
