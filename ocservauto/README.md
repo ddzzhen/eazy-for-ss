@@ -63,6 +63,12 @@ bertter to use(depend environment):
 >connected but no data:smaller the "dpd","mobile-dpd"
 >high ping:make "output-buffer" to 10
 >Tip:small "output-buffer" will influence the mount of data.
+#no-route
+no-route = 192.168.0.0/255.255.0.0
+no-route = 172.16.0.0/255.240.0.0
+no-route = 169.254.0.0/255.255.0.0
+no-route = 127.0.0.0/255.0.0.0
+
 ============
 
 ## LICENCE
